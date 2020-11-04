@@ -9,7 +9,7 @@ import com.rabbitmq.client.DeliverCallback;
  * @author Ivan Rovenskiy
  * 01 November 2020
  */
-public class Main {
+public class Consumer {
     public static final String emailSenderQueue = "email_sender";
 
     public static void main(String[] args) throws Exception {
