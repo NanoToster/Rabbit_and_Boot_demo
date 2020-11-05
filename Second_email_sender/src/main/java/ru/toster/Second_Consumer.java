@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 01 November 2020
  */
 @SpringBootApplication
-public class Consumer {
+public class Second_Consumer {
     public static void main(String[] args) {
-        SpringApplication.run(Consumer.class, args);
+        SpringApplication.run(Second_Consumer.class, args);
     }
 }

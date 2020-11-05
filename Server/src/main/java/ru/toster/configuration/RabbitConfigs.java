@@ -9,7 +9,6 @@ import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.toster.Receiver;
 
 /**
  * @author Ivan Rovenskiy
@@ -39,8 +38,8 @@ public class RabbitConfigs {
     }
 
     @Bean
-    protected MessageListenerAdapter listenerAdapter(final Receiver receiver) {
-        return new MessageListenerAdapter(receiver, "receiveMessage");
+    protected MessageListenerAdapter listenerAdapter() {
+        return new MessageListenerAdapter();
     }
 
     @Bean
